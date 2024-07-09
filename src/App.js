@@ -33,7 +33,6 @@ export default function App() {
     }
   }, [keyword]);
 
-  console.log("Displayed photos", filteredPhotos);
   return (
     <div className="App">
       <input
