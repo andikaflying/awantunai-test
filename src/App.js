@@ -6,9 +6,12 @@ import { setPhotos } from "./actions";
 export default function App() {
   const [keyword, setKeyword] = useState("");
   const URL = "https://jsonplaceholder.typicode.com/photos";
+
   const photosReducer = useSelector((state) => state.photosReducer);
+
   const dispatch = useDispatch();
   const [filteredPhotos, setFilteredPhotos] = useState([]);
+
   useEffect(() => {
     try {
       fetch(URL)
@@ -20,8 +23,6 @@ export default function App() {
     } catch (error) {
       setError(true);
     }
-
-    return () => {};
   }, []);
 
   useEffect(() => {
