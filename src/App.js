@@ -43,7 +43,7 @@ export default function App() {
         type="text"
         onChange={(e) => setKeyword(e.target.value)}
         placeholder="Search"
-        style={{ marginBottom: "20px" }}
+        style={{ marginBottom: "22px" }}
       />
       <div style={{ display: "grid", gridTemplateColumns: "auto auto auto" }}>
         {!keyword &&
