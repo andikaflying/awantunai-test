@@ -6,9 +6,7 @@ import { setPhotos } from "./actions";
 export default function App() {
   const [keyword, setKeyword] = useState("");
   const URL = "https://jsonplaceholder.typicode.com/photos";
-
   const photosReducer = useSelector((state) => state.photosReducer);
-
   const dispatch = useDispatch();
   const [filteredPhotos, setFilteredPhotos] = useState([]);
 
