@@ -42,7 +42,7 @@ export default function App() {
       <input
         type="text"
         onChange={(e) => setKeyword(e.target.value)}
-        placeholder="Search"
+        placeholder="Search keyword"
         style={{ marginBottom: "22px" }}
       />
       <div style={{ display: "grid", gridTemplateColumns: "auto auto auto" }}>
