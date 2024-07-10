@@ -5,7 +5,9 @@ import { setPhotos } from "./actions";
 
 export default function App() {
   const [keyword, setKeyword] = useState("");
+
   const URL = "https://jsonplaceholder.typicode.com/photos";
+
   const photosReducer = useSelector((state) => state.photosReducer);
 
   const dispatch = useDispatch();
@@ -30,6 +32,7 @@ export default function App() {
       const newData = photosReducer.photos.filter((item) =>
         item.thumbnailUrl.includes(keyword)
       );
+
       setFilteredPhotos(newData);
     }
   }, [keyword]);
@@ -40,7 +43,7 @@ export default function App() {
         type="text"
         onChange={(e) => setKeyword(e.target.value)}
         placeholder="Search"
-        style={{ marginBottom: "36px" }}
+        style={{ marginBottom: "20px" }}
       />
       <div style={{ display: "grid", gridTemplateColumns: "auto auto auto" }}>
         {!keyword &&
