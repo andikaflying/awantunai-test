@@ -19,7 +19,7 @@ export default function App() {
       fetch(URL)
         .then((resp) => resp.json())
         .then((data) => {
-          console.log("Too proud for yourself : ", data);
+          console.log("Too proud ssss yourself : ", data);
           dispatch(setPhotos(data));
         });
     } catch (error) {
