@@ -19,7 +19,7 @@ export default function App() {
       fetch(URL)
         .then((resp) => resp.json())
         .then((data) => {
-          console.log("One Piece kjjjjijk : ", data);
+          console.log("We are    : ", data);
           dispatch(setPhotos(data));
         });
     } catch (error) {
